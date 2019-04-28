@@ -3,11 +3,15 @@ With this project, data from a Samsung Galaxy S smartphone accelerometer and gyr
 
 This repository contains the following files:
 
-README.md, this file, which gives a general description of the data set.
-tidy_data.txt, which contains the data set
-CodeBook.md, which describes the data set's contents 
-run_analysis.R, an R script that created the data set
-#Study design
+-README.md, this file, which gives a general description of the data set.
+
+-tidy_data.txt, which contains the data set
+
+-CodeBook.md, which describes the data set's contents 
+
+-run_analysis.R, an R script that created the data set
+
+# Study design
 
 The Human Activity Recognition Using Smartphones Data Set had the source data for this project. This data was originally obtained in the following manner: 
 
@@ -17,17 +21,22 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 The training and test data were merged to create a single data set, and the mean and std. deviation were calculated for each measurement. Then, the mean of the measurements themselves wa obtained for each subject and activity, which in turn produces the final data set.
 
-#Creating the data set
+# Creating the data set
 The R script run_analysis.R was used to create the final data set. It implements the following steps:
 
 -Download the data
+
 -Read the data
+
 -Merge the training and the test sets
+
 -Extract measurements on mean and std. deviation for every measurement.
+
 -Name each activity in the data set.
+
 -Label the data set with variable names.
+
 -Create the tidy data set with the average of each variable for each activity/subject.
+
 -Write the data set to the tidy_data.txt file.
 The tidy_data.txt in this repository was created by running the run_analysis.R script using R version 3.5.2 (2018-12-20) on Windows 10 64-bit edition.
-
-This script requires the dplyr package (version 0.4.3 was used).
