@@ -1,4 +1,4 @@
-## Getting-and-Cleaning-Data-Course-Project
+# Getting-and-Cleaning-Data-Course-Project
 With this project, data from a Samsung Galaxy S smartphone accelerometer and gyroscope was obtained and cleaned to get a tidy data set that could be analyzed later
 
 This repository contains the following files:
@@ -11,7 +11,7 @@ This repository contains the following files:
 
 -run_analysis.R, an R script that created the data set
 
-# Study design
+## Study design
 
 The Human Activity Recognition Using Smartphones Data Set had the source data for this project. This data was originally obtained in the following manner: 
 
@@ -21,7 +21,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 The training and test data were merged to create a single data set, and the mean and std. deviation were calculated for each measurement. Then, the mean of the measurements themselves wa obtained for each subject and activity, which in turn produces the final data set.
 
-# Creating the data set
+## Creating the data set
 The R script run_analysis.R was used to create the final data set. It implements the following steps:
 
 -Download the data
