@@ -1,16 +1,12 @@
 # Code book for Coursera *Getting and Cleaning Data* course project
 
-The data set that this code book pertains to is located in the `tidy_data.txt` file of this repository.
-
-See the `README.md` file of this repository for background information on this data set.
-
-The structure of the data set is described in the [Data](#data) section, its variables are listed in the [Variables](#variables) section, and the transformations that were carried out to obtain the data set based on the source data are presented in the [Transformations](#transformations) section.
+The tidy data set's structure is described in the [Data](#data) section, the variables are described in the [Variables](#variables) section, and the transformations that were made to obtain the data set are listed in the [Transformations](#transformations) section.
 
 ## Data <a name="data"></a>
 
-The `tidy_data.txt` data file is a text file, containing space-separated values.
+The `tidy_data.txt` is a text file, with specific values.
 
-The first row contains the names of the variables, which are listed and described in the [Variables](#variables) section, and the following rows contain the values of these variables. 
+The first row has all the variable names, described in the [Variables](#variables) section, and the next rows have the values for these same variables. 
 
 ## Variables <a name="variables"></a>
 
@@ -20,31 +16,29 @@ Each row contains, for a given subject and activity, 79 averaged signal measurem
 
 - `subject`
 
-	Subject identifier, integer, ranges from 1 to 30.
+	Subject identifier, integer values, goes from 1-30.
 
 - `activity`
 
-	Activity identifier, string with 6 possible values: 
-	- `WALKING`: subject was walking
-	- `WALKING_UPSTAIRS`: subject was walking upstairs
-	- `WALKING_DOWNSTAIRS`: subject was walking downstairs
-	- `SITTING`: subject was sitting
-	- `STANDING`: subject was standing
-	- `LAYING`: subject was laying
+	Identifies the nature of each activity, and has 6 possible values: 
+	- `WALKING`: The subject was walking
+	- `WALKING_UPSTAIRS`:  The subject was walking upstairs
+	- `WALKING_DOWNSTAIRS`: The subject was walking downstairs
+	- `SITTING`: The subject was sitting
+	- `STANDING`: The subject was standing
+	- `LAYING`: The subject was laying
 
 ### Average of measurements <a name="average-measurements"></a>
 
-All measurements are floating-point values, normalised and bounded within [-1,1].
+All measurements are individual point values, and were bounded inside [-1,1].
 
-Prior to normalisation, acceleration measurements (variables containing `Accelerometer`) were made in *g*'s (9.81 m.s⁻²) and gyroscope measurements (variables containing `Gyroscope`) were made in radians per second (rad.s⁻¹).
-
-Magnitudes of three-dimensional signals (variables containing `Magnitude`) were calculated using the Euclidean norm.
+Prior to normalisation, acceleration values were measured in *g*'s (9.81 m.s⁻²) and gyroscope values were measured in radians per second (rad.s⁻¹).
 
 The measurements are classified in two domains:
 
-- Time-domain signals (variables prefixed by `timeDomain`), resulting from the capture of accelerometer and gyroscope raw signals.
+- Time-domain signals obtained through the accelerometer and gyroscope.
 
-- Frequency-domain signals (variables prefixed by `frequencyDomain`), resulting from the application of a Fast Fourier Transform (FFT) to some of the time-domain signals.
+- Frequency-domain signals obtained from applying a Fast Fourier Transform (FFT) to some of the time-domain signals.
 
 #### Time-domain signals
 
